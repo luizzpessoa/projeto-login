@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+    Paleda de cores:
+    Azul: #36435D
+    Bege: #D1C2A0
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body, html {
+    background-color: #36435D;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;    
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: #D1C2A0;
+    width: 250px;
+    height: 500px;
+    border-radius: 22px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+
+    transition: width .3s, height .3s;
+    transition-timing-function: ease-in-out;
+}
+
+section#login > div#imagem {
+    display: block;
+    background: url(../imagens/greece.jpg) no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
